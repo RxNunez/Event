@@ -1,37 +1,49 @@
 package models;
 
+import java.util.*;
+
 public class Event {
     private Integer custGuests;
     private Integer custMeals;
     private Integer custBeverages;
     private Integer custEntertainment;
     private Integer cost = 0;
-    private Integer discount;
+    private Integer custDiscount;
     private String mealOption = "";
     private String beverageOption = "";
     private String entertainmentOption = "";
+    private String discountOption = "";
 
-    public Event(Integer guests, Integer meals, Integer beverages, Integer entertainment) {
+    public Event(Integer guests, Integer meals, Integer beverages, Integer entertainment, Integer discount) {
         custGuests = guests;
         custMeals = meals;
         custBeverages = beverages;
         custEntertainment = entertainment;
+        custDiscount = discount;
     }
 
     public Integer getGuests() {
         return custGuests;
     }
+
     public String getMealOption() {
         return mealOption;
     }
+
     public String getBeverageOption() {
         return beverageOption;
     }
+
     public String getEntertainmentOption() {
         return entertainmentOption;
     }
+
     public Integer getCost() {
         return cost;
+    }
+
+    public Integer getDiscount() {
+        return custDiscount;
     }
 
     public Integer billTotal() {
@@ -58,10 +70,17 @@ public class Event {
         } else {
             cost += 1000;
         }
-
+        if (custDiscount == 1) {
+            cost -= 100;
+        } else if (custDiscount == 2) {
+            cost -= 200;
+        } else {
+            cost += 0;
+        }
         return cost;
     }
-    public String pickMeal(){
+
+    public String pickMeal() {
         if (custMeals == 1) {
             mealOption = "Chicken/Beef";
         } else if (custMeals == 2) {
@@ -71,7 +90,8 @@ public class Event {
         }
         return mealOption;
     }
-    public String pickBeverage(){
+
+    public String pickBeverage() {
         if (custBeverages == 1) {
             beverageOption = "Non-Alcoholic";
         } else if (custBeverages == 2) {
@@ -81,7 +101,8 @@ public class Event {
         }
         return beverageOption;
     }
-    public String pickEntertainment(){
+
+    public String pickEntertainment() {
         if (custEntertainment == 1) {
             entertainmentOption = "Live Band";
         } else if (custEntertainment == 2) {
@@ -90,5 +111,16 @@ public class Event {
             entertainmentOption = "Your choice is unavailable. BoBo the Clown and water balloons are default.";
         }
         return entertainmentOption;
+    }
+
+    public String pickDiscount() {
+        if (custDiscount == 1) {
+            discountOption = "Winter Months";
+        } else if (custEntertainment == 2) {
+            discountOption = "Referral";
+        } else {
+            discountOption = "Your choice is unavailable. No discount will be awarded.";
+        }
+        return discountOption;
     }
 }
