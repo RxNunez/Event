@@ -20,6 +20,9 @@ public class Event {
 
     public Integer getGuests() {
         return custGuests;
+    }
+    public Integer getMeals() {
+        return custMeals;
 
     }
 }
