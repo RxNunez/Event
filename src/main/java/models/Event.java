@@ -81,5 +81,5 @@ public class Event {
         }
         return beverageOption;
     }
-
+    public
 }
