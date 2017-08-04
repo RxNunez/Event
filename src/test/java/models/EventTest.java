@@ -38,6 +38,5 @@ public class EventTest {
         Event testEvents = new Event(10, 1, 1, 1);
         assertEquals(Integer.valueOf(10), testEvents.getCost());
     }
-
 }
 
