@@ -43,6 +43,12 @@ public class EventTest {
         Event testEvents = new Event(20, 1, 1, 1);
         assertEquals(Integer.valueOf(2000), testEvents.billTotal());
     }
+    @Test
+    public void newEvent_pickMeal() {
+        Event testEvents = new Event(10, 2, 1, 1);
+        String expectedOutput = "Seafood/Vegan";
+        assertEquals(expectedOutput, testEvents.pickMeal());
+    }
 
 }
 

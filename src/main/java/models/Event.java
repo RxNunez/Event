@@ -61,5 +61,14 @@ public class Event {
 
         return cost;
     }
-    public
+    public String pickMeal(){
+        if (custMeals == 1) {
+            mealOption = "Chicken/Beef";
+        } else if (custMeals == 2) {
+            mealOption = "Seafood/Vegan";
+        } else {
+            mealOption = "Your choice is unavailable. Chicken and vegetables are default.";
+        }
+        return mealOption;
+    }
 }
