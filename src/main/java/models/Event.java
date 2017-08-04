@@ -7,9 +7,9 @@ public class Event {
     private Integer custEntertainment;
     private Integer cost = 0;
     private Integer discount;
-    private String mealoption = "";
-    private String beverageoption = "";
-    private String entertainmentoption = "";
+    private String mealOption = "";
+    private String beverageOption = "";
+    private String entertainmentOption = "";
 
     public Event(Integer guests, Integer meals, Integer beverages, Integer entertainment) {
         custGuests = guests;
@@ -21,8 +21,11 @@ public class Event {
     public Integer getGuests() {
         return custGuests;
     }
-    public Integer getMeals() {
-        return custMeals;
+    public String getMealOption() {
+        return mealOption;
+    }
+    public String getBeverageOption() {
+        return beverageOption;
 
     }
 }

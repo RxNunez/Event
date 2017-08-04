@@ -19,7 +19,13 @@ public class EventTest {
     public void newEvent_getMeals() {
         Event testEvents = new Event(8, 1, 1, 1);
         String expectedOutput = "";
-        assertEquals(expectedOutput, testEvents.getMeals());
+        assertEquals(expectedOutput, testEvents.getMealOption());
+    }
+    @Test
+    public void newEvent_getBeverages() {
+        Event testEvents = new Event(8, 1, 1, 1);
+        String expectedOutput = "";
+        assertEquals(expectedOutput, testEvents.getBeverageOption());
     }
 
 }
