@@ -71,4 +71,5 @@ public class Event {
         }
         return mealOption;
     }
+    public
 }
