@@ -33,4 +33,32 @@ public class Event {
     public Integer getCost() {
         return cost;
     }
+
+    public Integer billTotal() {
+        if (custMeals == 1) {
+            cost += 15 * custGuests;
+        } else if (custMeals == 2) {
+            cost += 25 * custGuests;
+        } else {
+            cost += 20 * custGuests;
+        }
+
+        if (custBeverages == 1) {
+            cost += 5 * custGuests;
+        } else if (custBeverages == 2) {
+            cost += 15 * custGuests;
+        } else {
+            cost += 10 * custGuests;
+        }
+
+        if (custEntertainment == 1) {
+            cost += 500;
+        } else if (custEntertainment == 2) {
+            cost += 1500;
+        } else {
+            cost += 1000;
+        }
+
+        return cost;
+    }
 }
