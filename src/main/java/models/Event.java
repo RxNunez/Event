@@ -71,5 +71,15 @@ public class Event {
         }
         return mealOption;
     }
-    public
+    public String pickBeverage(){
+        if (custBeverages == 1) {
+            beverageOption = "Non-Alcoholic";
+        } else if (custBeverages == 2) {
+            beverageOption = "Alcoholic";
+        } else {
+            beverageOption = "Your choice is unavailable. Non-Alcoholic and sparkling are default.";
+        }
+        return beverageOption;
+    }
+
 }

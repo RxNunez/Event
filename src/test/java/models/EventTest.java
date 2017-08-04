@@ -49,6 +49,12 @@ public class EventTest {
         String expectedOutput = "Seafood/Vegan";
         assertEquals(expectedOutput, testEvents.pickMeal());
     }
+    @Test
+    public void newEvent_pickBeverage() {
+        Event testEvents = new Event(10, 2, 1, 1);
+        String expectedOutput = "Alcoholic Beverages";
+        assertEquals(expectedOutput, testEvents.pickBeverage());
+    }
 
 }
 
