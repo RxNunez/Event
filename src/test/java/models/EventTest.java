@@ -17,7 +17,7 @@ public class EventTest {
     }
     @Test
     public void newEvent_getMeals() {
-        Event testEvents = new Event(10, 2, 2, 2);
+        Event testEvents = new Event(8, 1, 1, 1);
         String expectedOutput = "";
         assertEquals(expectedOutput, testEvents.getMeals());
     }
