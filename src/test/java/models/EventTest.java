@@ -52,8 +52,14 @@ public class EventTest {
     @Test
     public void newEvent_pickBeverage() {
         Event testEvents = new Event(10, 2, 1, 1);
-        String expectedOutput = "Alcoholic Beverages";
+        String expectedOutput = "Alcoholic";
         assertEquals(expectedOutput, testEvents.pickBeverage());
+    }
+    @Test
+    public void newEvent_pickEntertainment() {
+        Event testEvents = new Event(10, 2, 1, 2);
+        String expectedOutput = "DJ";
+        assertEquals(expectedOutput, testEvents.pickEntertainment());
     }
 
 }

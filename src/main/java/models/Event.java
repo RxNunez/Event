@@ -81,5 +81,14 @@ public class Event {
         }
         return beverageOption;
     }
-    public
+    public String pickEntertainment(){
+        if (custEntertainment == 1) {
+            entertainmentOption = "Live Band";
+        } else if (custEntertainment == 2) {
+            entertainmentOption = "DJ";
+        } else {
+            entertainmentOption = "Your choice is unavailable. BoBo the Clown and water balloons are default.";
+        }
+        return entertainmentOption;
+    }
 }
