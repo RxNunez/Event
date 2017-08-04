@@ -61,4 +61,5 @@ public class Event {
 
         return cost;
     }
+    public
 }
