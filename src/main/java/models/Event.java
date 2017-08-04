@@ -1,6 +1,6 @@
 package models;
 
-class Event {
+public class Event {
     private Integer custGuests;
     private Integer custMeals;
     private Integer custBeverages;
@@ -17,4 +17,7 @@ class Event {
         custBeverages = beverages;
         custEntertainment = entertainment;
     }
+
+
+
 }
