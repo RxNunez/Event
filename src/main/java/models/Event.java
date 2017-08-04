@@ -18,6 +18,8 @@ public class Event {
         custEntertainment = entertainment;
     }
 
+    public Integer getGuests() {
+        return custGuests;
 
-
+    }
 }
