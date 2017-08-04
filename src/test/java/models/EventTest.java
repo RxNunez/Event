@@ -27,6 +27,12 @@ public class EventTest {
         String expectedOutput = "";
         assertEquals(expectedOutput, testEvents.getBeverageOption());
     }
+    @Test
+    public void newEvent_getEntertainment() {
+        Event testEvents = new Event(8, 1, 1, 1);
+        String expectedOutput = "";
+        assertEquals(expectedOutput, testEvents.getEntertainmentOption());
+    }
 
 }
 

@@ -26,6 +26,9 @@ public class Event {
     }
     public String getBeverageOption() {
         return beverageOption;
+    }
+    public String getEntertainmentOption() {
+        return entertainmentOption;
 
     }
 }
