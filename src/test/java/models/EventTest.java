@@ -33,6 +33,11 @@ public class EventTest {
         String expectedOutput = "";
         assertEquals(expectedOutput, testEvents.getEntertainmentOption());
     }
+    @Test
+    public void newEvent_getCost_10() {
+        Event testEvents = new Event(10, 1, 1, 1);
+        assertEquals(Integer.valueOf(10), testEvents.getCost());
+    }
 
 }
 

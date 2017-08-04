@@ -29,6 +29,8 @@ public class Event {
     }
     public String getEntertainmentOption() {
         return entertainmentOption;
-
+    }
+    public Integer getCost() {
+        return cost;
     }
 }
