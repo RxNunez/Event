@@ -64,9 +64,9 @@ public class Event {
         }
 
         if (custEntertainment == 1) {
-            cost += 500;
-        } else if (custEntertainment == 2) {
             cost += 1500;
+        } else if (custEntertainment == 2) {
+            cost += 500;
         } else {
             cost += 1000;
         }
@@ -116,7 +116,7 @@ public class Event {
     public String pickDiscount() {
         if (custDiscount == 1) {
             discountOption = "Winter Months";
-        } else if (custEntertainment == 2) {
+        } else if (custDiscount == 2) {
             discountOption = "Referral";
         } else {
             discountOption = "Your choice is unavailable. No discount will be awarded.";
