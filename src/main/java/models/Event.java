@@ -7,7 +7,7 @@ public class Event {
     private Integer custMeals;
     private Integer custBeverages;
     private Integer custEntertainment;
-    private Integer cost = 0;
+    private Integer cost =0;
     private Integer custDiscount;
     private String mealOption = "";
     private String beverageOption = "";
