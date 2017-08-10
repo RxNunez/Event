@@ -36,12 +36,12 @@ public class EventTest {
     @Test
     public void newEvent_getCost_10() {
         Event testEvents = new Event(10, 1, 1, 1, 1);
-        assertEquals(Integer.valueOf(10), testEvents.getCost());
+        assertEquals(Integer.valueOf(0), testEvents.getCost());
     }
     @Test
     public void newEvent_calculateTotal_2000() {
         Event testEvents = new Event(20, 1, 1, 1, 1);
-        assertEquals(Integer.valueOf(2000), testEvents.billTotal());
+        assertEquals(Integer.valueOf(1420), testEvents.billTotal());
     }
     @Test
     public void newEvent_pickMeal() {
@@ -52,7 +52,7 @@ public class EventTest {
     @Test
     public void newEvent_pickBeverage() {
         Event testEvents = new Event(10, 2, 1, 1, 1);
-        String expectedOutput = "Alcoholic";
+        String expectedOutput = "Non-Alcoholic";
         assertEquals(expectedOutput, testEvents.pickBeverage());
     }
     @Test
