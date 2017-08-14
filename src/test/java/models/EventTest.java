@@ -39,9 +39,9 @@ public class EventTest {
         assertEquals(Integer.valueOf(0), testEvents.getCost());
     }
     @Test
-    public void newEvent_calculateTotal_2000() {
+    public void newEvent_calculateTotal_1800() {
         Event testEvents = new Event(20, 1, 1, 1, 1);
-        assertEquals(Integer.valueOf(1420), testEvents.billTotal());
+        assertEquals(Integer.valueOf(1800), testEvents.billTotal());
     }
     @Test
     public void newEvent_pickMeal() {
